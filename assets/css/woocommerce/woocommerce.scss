@@ -1104,6 +1104,20 @@ ul#shipping_method {
 	ul#shipping_method {
 		margin-bottom: 0;
 	}
+
+	.site-header,
+	.site-branding,
+	.site-search,
+	.woocommerce-breadcrumb,
+	.site-footer,
+	.product_meta,
+	.related.products {
+		display: none !important;
+	}
+
+	.site-content {
+		margin-top: 4.235801032em;
+	}
 }
 
 /**
