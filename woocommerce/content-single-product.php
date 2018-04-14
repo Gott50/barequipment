@@ -9,6 +9,27 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
+
+global $product;
+if ( empty( $product ) || ! $product->is_visible() ) {
+	?>
+    <style>
+        .site-header,
+        .site-branding,
+        .site-search,
+        .woocommerce-breadcrumb,
+        .site-footer{
+            display: none !important;
+        }
+
+
+        .site-content {
+            margin-top: 4.235801032em;
+        }
+    </style>
+<?php
+}
+
 /**
  * Hook Woocommerce_before_single_product.
  *
