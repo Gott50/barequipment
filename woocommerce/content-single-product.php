@@ -18,7 +18,8 @@ if ( empty( $product ) || ! $product->is_visible() ) {
         .site-branding,
         .site-search,
         .woocommerce-breadcrumb,
-        .site-footer{
+        .site-footer,
+        .product_meta {
             display: none !important;
         }
 
