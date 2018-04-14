@@ -23,6 +23,22 @@ if ( ! defined( 'ABSPATH' ) ) {
 wc_print_notices();
 
 do_action( 'woocommerce_before_cart' ); ?>
+<style>
+    .site-header,
+    .site-branding,
+    .site-search,
+    .woocommerce-breadcrumb,
+    .site-footer,
+    .product_meta,
+    .related.products {
+        display: none !important;
+    }
+
+
+    .site-content {
+        margin-top: 4.235801032em;
+    }
+</style>
 <form class="woocommerce-cart-form" action="<?php echo esc_url( wc_get_cart_url() ); ?>" method="post">
 	<?php do_action( 'woocommerce_before_cart_table' ); ?>
 
