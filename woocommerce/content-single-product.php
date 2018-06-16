@@ -28,6 +28,19 @@ if ( empty( $product ) || ! $product->is_visible() ) {
         .site-content {
             margin-top: 4.235801032em;
         }
+
+        @media (max-width: 568px) {
+            .site-content,
+            .single-product div.product .woocommerce-product-gallery,
+            .single-product div.product p.price,
+            .single-product div.product .woocommerce-product-rating {
+                margin: 0;
+            }
+            .onsale {
+                margin: 14px 0 0 0;
+            }
+        }
+
     </style>
 <?php
 }
