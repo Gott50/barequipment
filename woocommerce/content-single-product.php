@@ -33,7 +33,8 @@ if ( empty( $product ) || ! $product->is_visible() ) {
             .site-content,
             .single-product div.product .woocommerce-product-gallery,
             .single-product div.product p.price,
-            .single-product div.product .woocommerce-product-rating {
+            .single-product div.product .woocommerce-product-rating,
+            .stock.in-stock {
                 margin: 0;
             }
             .onsale {
