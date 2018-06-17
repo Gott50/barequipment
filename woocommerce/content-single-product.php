@@ -29,6 +29,10 @@ if ( empty( $product ) || ! $product->is_visible() ) {
             margin-top: 4.235801032em;
         }
 
+        .star-rating span::before {
+            color: #ffc100;
+        }
+
         @media (max-width: 568px) {
             .site-content,
             .single-product div.product .woocommerce-product-gallery,
