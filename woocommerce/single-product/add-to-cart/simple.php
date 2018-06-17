@@ -54,9 +54,13 @@ if ( $product->is_in_stock() ) : ?>
 			 */
 			do_action( 'woocommerce_after_add_to_cart_quantity' );
 		?>
-
-		<button type="submit" name="add-to-cart" value="<?php echo esc_attr( $product->get_id() ); ?>" class="single_add_to_cart_button button alt"><?php echo esc_html( $product->single_add_to_cart_text() ); ?></button>
-
+		<button onclick='window.setTimeout(myFunction,300)'
+                type="submit" name="add-to-cart" value="<?php echo esc_attr( $product->get_id() ); ?>" class="single_add_to_cart_button button alt"><?php echo esc_html( $product->single_add_to_cart_text() ); ?></button>
+        <script>
+            function myFunction() {
+                window.open("<?php echo esc_url( wc_get_checkout_url() );?>")
+            }
+        </script>
 		<?php
 			/**
 			 * @since 2.1.0.
