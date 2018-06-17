@@ -44,6 +44,11 @@ if ( empty( $product ) || ! $product->is_visible() ) {
             .onsale {
                 margin: 14px 0 0 0;
             }
+
+            .product_title {
+                font-size: 1.7em;
+                font-weight: 400;
+            }
         }
 
     </style>
