@@ -109,10 +109,10 @@ if ( post_password_required() ) {
 	 */
 	do_action( 'woocommerce_after_single_product_summary' );
 	?>
+    <div style="display:  flex;justify-content:  center;">
+        <?php woocommerce_template_single_add_to_cart() ?>
+    </div>
 </div>
 
 <?php do_action( 'woocommerce_after_single_product' ); ?>
 
-<div class="product" style="display:  flex;justify-content:  center;">
-    <?php woocommerce_template_single_add_to_cart() ?>
-</div>
