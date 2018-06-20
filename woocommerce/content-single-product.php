@@ -29,6 +29,7 @@ if ( empty( $product ) || ! $product->is_visible() ) {
             margin-top: 4.235801032em;
         }
 
+        p.stars.selected a.active:before, p.stars:hover a:before, p.stars.selected a:not(.active):before, p.stars.selected a.active:before,
         .star-rating span::before {
             color: #ffc100;
         }
